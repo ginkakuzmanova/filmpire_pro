@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Actors(props) {
+export default function Actors() {
     return (
         <div>Actors</div>
     );
