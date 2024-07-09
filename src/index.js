@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom/client';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from 'react-router-dom';
+import {createTheme} from "@mui/material";
+import {ThemeProvider} from '@mui/material/styles';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const theme = createTheme({});
 root.render(
     <React.StrictMode>
-        <Router>
-            <App/>
-        </Router>
+        <ThemeProvider theme={theme}>
+            <Router>
+                <App/>
+            </Router>
+        </ThemeProvider>
     </React.StrictMode>
 );
 
